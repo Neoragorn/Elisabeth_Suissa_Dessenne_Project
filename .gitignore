@@ -1,2 +1,7 @@
 
 *.component
+.project
+.settings/.jsdtscope
+*.xml
+*.container
+*.name
