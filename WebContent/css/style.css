@@ -2,9 +2,9 @@
 .main-section{	
 	width: 20%;
 	position: absolute;
-	right: 10em;
-	top: 20em;
-	z-index:3;
+	right: 5em;
+	top: 17em;
+	z-index:2;
 	border:3px solid gray;
 	border-radius : 30px;
 	background-color: #fff;	
@@ -36,9 +36,9 @@
 
 .card
 {
-	width:20%;
+	width: 10%;
 	position: absolute;
-	top: 20em;
+	top: 20em;	
 	border : 3px solid gray;
 	border-left: none;
 	border-radius : 30px;
