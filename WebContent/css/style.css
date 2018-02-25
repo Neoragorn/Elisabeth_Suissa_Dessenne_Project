@@ -1,10 +1,23 @@
+.portfo-img
+{
+	width:100%;
+	min-height:300px;	
+}
+
+.card-img-porto-overlay
+{
+ 	position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;	
+}
 
 .items
 {
 	position : absolute;
 	left : 24%;
 	display:block;
-    width:100%;    
+    width:100%; 
 }
 
 
