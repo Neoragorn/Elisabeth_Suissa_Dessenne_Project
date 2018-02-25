@@ -1,4 +1,25 @@
 
+.items
+{
+	position : absolute;
+	left : 24%;
+	display:block;
+    width:100%;    
+}
+
+
+#portfolio li
+{
+	margin: 10px;
+	display:table-cell;
+}
+
+.descrip
+{
+		font-weight: bold;
+	font-size: x-large;
+}
+
 .main-section{	
 	width: 20%;
 	position: absolute;
@@ -78,7 +99,7 @@ filter: blur(1px);
 
 .cardcontact
 {
-	width: 20em;
+	width: 15%;
 	background-color:#2E3232;
 	position: absolute;
 	top: 20em;	
@@ -119,12 +140,18 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
     letter-spacing: -.02rem;
     color: white;
+    font-weight: bold;
+}
+
+h3
+{
+	    letter-spacing: -.02rem;
+    color: black;
     font-weight: bold;
 }
 
@@ -399,6 +426,8 @@ a:focus {
     float: left;
     width: 100%;
     overflow: hidden;
+    display:table-cell;
+    border : 5 px red solid;
 }
 
 #portfolio .items li a img {
@@ -407,6 +436,7 @@ a:focus {
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+        border : 5 px red solid;
 }
 
 #portfolio .items li a .overlay {
