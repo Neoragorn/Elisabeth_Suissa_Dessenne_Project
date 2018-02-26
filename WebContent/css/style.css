@@ -99,6 +99,7 @@
 /* The fast way */
 .card{
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 /* Pre-render the bigger shadow, but hide it */
@@ -149,6 +150,7 @@ filter: blur(1px);
 {
 	font-weight: bold;
 	font-size: x-large;
+	color:white;
 }
 
 .card-text-2
@@ -159,7 +161,6 @@ filter: blur(1px);
 
 .card-text
 {
-	
 	font-weight: bold;	
 }
 
@@ -175,15 +176,16 @@ h1,
 h2,
 h4,
 h5,
-h6 {
+ {
     letter-spacing: -.02rem;
     color: white;
     font-weight: bold;
 }
 
-h3
+h3,
+h6
 {
-	    letter-spacing: -.02rem;
+	letter-spacing: -.02rem;
     color: black;
     font-weight: bold;
 }
@@ -391,12 +393,22 @@ a:focus {
     width: 100%;
     height: 100%;
     content: "";
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0);
 }
 
 .page.overlay .content {
     position: relative;
     z-index: 1;
+}
+
+.page1
+{
+    position: relative;
+    overflow: hidden;
+	width: 100%;
+    height: 73em;
+    content: "";
+    background: rgba(0, 0, 0, 0);
 }
 
 #home {
@@ -406,6 +418,7 @@ a:focus {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    min-height: 950px;
 }
 
 #home h1 {
@@ -560,6 +573,12 @@ a:focus {
     border-color: #fff;
 }
 
+#about
+{
+    background: #2E3232;
+    color: white;	
+}
+
 #about .content {
     margin-bottom: 0;
 }
@@ -608,7 +627,6 @@ a:focus {
 }
 
 #contact {
-    background: url(../img/cover/contact.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -618,11 +636,11 @@ a:focus {
 #contact a,
 #contact a:hover,
 #contact a:focus {
-    color: #fff
+	color: black;
 }
 
 #contact .heading .border {
-    background: #fff
+    background: #fff;
 }
 
 #contact a {
