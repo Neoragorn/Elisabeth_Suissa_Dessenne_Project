@@ -474,6 +474,7 @@ a:focus {
     overflow: hidden;
     display:table-cell;
     border : 5 px red solid;
+      	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #portfolio .items li a img {
