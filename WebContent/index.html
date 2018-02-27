@@ -5,8 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Merlin HTML/CSS template">
-<meta name="author" content="Hasan Alibegic">
 <link rel="shortcut icon" href="favicon.ico">
 <title>Cabinet Suissa-Dessenne</title>
 <link rel="stylesheet"
@@ -48,7 +46,8 @@
 						156-158 rue de la Bassée <br> 59000 Lille <br> Tel :
 						0328459492 / 0671209532 <br> Fax : 0970623408
 					</p>
-					<a href="#" class="btn btn-primary">Mail</a>
+					<a class="mt-0 mb-4 btn btn-bluespe nav-external animated hiding"
+							data-animation="fadeIn" data-delay="300" href="#contact">Mail</a>
 				</div>
 			</div>
 		</div>
@@ -129,7 +128,9 @@
 		<div class="container">
 			<div class="content text-center">
 				<div class="heading">
-					<h2 class="mt-0 mb-4" style="color: letter-spacing: -.02rem; color: white;font-weight: bold;">Mes valeurs</h2>
+					<h2 class="mt-0 mb-4"
+						style="color: letter-spacing: -.02rem; color: white; font-weight: bold;">Mes
+						valeurs</h2>
 					<div class="border"></div>
 					<br>
 					<p class="descrip text-white">Etre avocate, c'est...</p>
@@ -170,7 +171,8 @@
 					<div class="col-sm-4 service animated hiding"
 						data-animation="fadeInUp" data-delay="900">
 						<div class="card text-white">
-							<img class="card-img responsive" src="img/cover/listen.jpg" alt="Card image">
+							<img class="card-img responsive" src="img/cover/listen2.jpg"
+								alt="Card image">
 							<div class="card-img-overlay">
 								<h5 class="card-title">Etre à votre écoute et vous épauler</h5>
 								<br> <br> <br>
@@ -246,8 +248,9 @@
 									data-gall="work" data-vbtype="ajax"> <img
 										class="portfo-img" src="img/work/cession.jpg" alt="">
 										<div class="card-img-porto-overlay">
-											<h5 class="card-title">Constitutions de société <br> et
-												cession de parts</h5>
+											<h5 class="card-title">
+												Constitutions de société <br> et cession de parts
+											</h5>
 											<button
 												class="mt-0 mb-4 btn btn-blue nav-external animated hiding"
 												data-animation="fadeIn" data-delay="900">En savoir
@@ -277,7 +280,8 @@
 					<h2 class="mt-0 mb-4">Clients & Honoraires</h2>
 					<div class="border"></div>
 				</div>
-				<br><br>
+				<br>
+				<br>
 				<div class="row">
 					<div class="col-sm-12 animated hiding" data-animation="fadeInDown">
 						<div id="testimonials" class="carousel slide">
@@ -438,29 +442,89 @@
 		<div class="container">
 			<div class="content text-center">
 				<div class="heading">
-					<h2 class="mt-0 mb-4">Contacts & Informations</h2>
-					<div class="border"></div>
-					<p class="mt-4 mb-0">Lorem ipsum dolor sit amet, consectetur
-						adipisicing elit.</p>
+					<h3 class="mt-0 mb-4">Contacts & Informations</h3>
+					<div class="borderbl"></div>
 				</div>
+				<br>
+				<p class="descrip">156-158, <br> rue de la Bassée <br> 59000 Lille</p>
 				<div class="row">
 					<div class="col-sm-4 animated hiding" data-animation="fadeInRight"
 						data-delay="600">
 						<i class="fa fa-map-marker fa-3x"></i>
 						<div id="map"
-							style="width: 400px; height: 400px; background: white"></div>
+							style="width: 350px; height: 350px; background: white"></div>
 					</div>
 					<div class="col-sm-4 animated hiding" data-animation="fadeInDown"
 						data-delay="300">
-						<i class="fa fa-phone fa-3x"></i> <a href="tel:9876543210">(987)
-							654-3210</a>
+						<i class="fa fa-phone fa-3x"></i> <br>
+						<br>
+						<br>
+						<div class="contactinfos">
+							<p style="font-style: italic; font-weight: bold; font-size: large; text-decoration: underline;">
+								Standard <br> 03.28.45.94.92
+							</p>
+							<div class="borderbl"></div><br>
+							<p style="font-style: italic; font-weight: bold; font-size: large; text-decoration: underline;">
+								Telephone Portable <br> 06.71.20.95.32
+							</p>
+							<div class="borderbl"></div><br>
+							<p style="font-style: italic; font-weight: bold; font-size: large; text-decoration: underline;">
+								Fax <br> 09.70.62.34.08
+							</p>
+						</div>
 					</div>
 					<div class="col-sm-4 animated hiding" data-animation="fadeInLeft"
 						data-delay="600">
-						<i class="fa fa-envelope fa-3x"></i> <a
-							href="mailto:john.doe@mail.com">john.doe@mail.com</a>
+						<i class="fa fa-envelope fa-3x"></i>
+						<form id="contact-form" method="post" action="contact.php" role="form">
+						<div class="row">
+							<div class="col">
+								<div class="form-group">
+									<label for="form_name">Nom & Prenom *</label> <input
+										id="form_name" type="text" name="name" class="form-control"
+										required="required"
+										data-error="Votre nom et prenom est necessaire">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_email">Email *</label> <input id="form_email"
+										type="email" name="email" class="form-control"
+										required="required"
+										data-error="Votre adresse mail est necessaire">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_phone">Telephone</label> <input id="form_phone"
+										type="tel" name="phone" class="form-control">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="form_message">Message *</label>
+									<textarea id="form_message" name="message" class="form-control"
+										placeholder="Que désirez vous ? " rows="4" required="required"
+										data-error="Laissez nous un message s'il vous plaît"></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<input type="submit" class="btn btn-blue btn-send animated hiding"
+									value="Envoyer">
+							</div>
+						</div>
+						</form>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -469,7 +533,7 @@
 			<div class="row">
 				<div class="col-sm-12 animated hiding" data-animation="fadeInUp">
 					<ul class="social list-inline">
-						<li class="list-inline-item"><a class="facebook"
+						<!--  <li class="list-inline-item"><a class="facebook"
 							href="http://www.facebook.com" title="Facebook"> <i
 								class="fa fa-facebook fa-2x"></i>
 						</a></li>
@@ -484,17 +548,14 @@
 						<li class="list-inline-item"><a class="dribbble"
 							href="http://www.linkedin.com" title="Dribbble"> <i
 								class="fa fa-dribbble fa-2x"></i>
-						</a></li>
+						</a></li>-->
 					</ul>
 					<p class="copyright">
-						Created by <a href="http://www.twitter.com/halibegic">@halibegic</a>
-						&middot; Code licensed under the <a
+						Code licensed under the <a
 							href="http://www.apache.org/licenses/LICENSE-2.0">Apache
 							License v2.0</a> &middot; Based on <a href="http://getbootstrap.com/">Bootstrap
 							v4</a> &middot; Icons by <a href="http://fontawesome.io/">Font
-							Awesome</a> &middot; <a href="http://www.github.com/halibegic/merlin">GitHub</a>
-						&middot; <a href="http://steamcommunity.com/id/halibegic">Buy
-							Me a Game</a>
+							Awesome</a>
 					</p>
 				</div>
 			</div>
@@ -543,7 +604,8 @@
 			var mapCanvas = document.getElementById("map");
 			var mapOptions = {
 				center : myCenter,
-				zoom : 17
+				zoom : 17,
+				streetViewControl: false
 			};
 			var map = new google.maps.Map(mapCanvas, mapOptions);
 			var marker = new google.maps.Marker({

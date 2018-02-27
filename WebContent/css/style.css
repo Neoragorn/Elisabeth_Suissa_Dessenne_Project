@@ -1,3 +1,9 @@
+.contactinfos
+{
+	font-size: large;
+	font-weight: bold;
+}
+
 .portfo-img
 {
 	border : 6px solid silver;
@@ -238,6 +244,11 @@ a:focus {
     background: #2E3232;
 }
 
+.btn-bluespe {
+    color: #fff;
+    background: #227fe8;
+}
+
 .btn-blue:hover,
 .btn-blue:focus {
     color: #fff;
@@ -380,6 +391,15 @@ a:focus {
 
 .page .border {
     width: 6rem;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f5b76a;
+}
+
+.borderbl
+{
+	    width: 6rem;
     height: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -656,7 +676,7 @@ a:focus {
     padding: 4rem 0;
     color: #ccc;
     text-align: center;
-    background: #233b6f;
+    background: #8e460b
 }
 
 #footer a,
