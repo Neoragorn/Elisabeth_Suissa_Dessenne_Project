@@ -394,7 +394,7 @@ a:focus {
     height: 2px;
     margin-left: auto;
     margin-right: auto;
-    background: #f5b76a;
+    background: #980b26;
 }
 
 .borderbl
@@ -403,7 +403,7 @@ a:focus {
     height: 2px;
     margin-left: auto;
     margin-right: auto;
-    background: #f5b76a;
+    background: 	#980b26;
 }
 
 .page.overlay:after {
@@ -552,12 +552,19 @@ a:focus {
 
 #testimonials .quote {
     padding: 0 2rem;
+    color: #fff;
 }
 
 #testimonials .quote:before {
     margin-right: 1rem;
     font-family: fontawesome;
     content: "\f10d";
+}
+
+#testimonials .quote:after {
+    margin-left: 1rem;
+    font-family: fontawesome;
+    content: "\f10e";
 }
 
 #testimonials .client {
@@ -676,7 +683,7 @@ a:focus {
     padding: 4rem 0;
     color: #ccc;
     text-align: center;
-    background: #8e460b
+    background: #980b26;
 }
 
 #footer a,
