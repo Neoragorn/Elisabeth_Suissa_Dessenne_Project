@@ -70,10 +70,7 @@ function initPortfolio() {
         return false;
     });
 
-    $items.find(".item a").venobox({
-        border: "2rem",
-        closeBackground: "transparent"
-    });
+
 }
 
 function initAnimations() {

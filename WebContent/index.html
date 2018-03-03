@@ -23,7 +23,6 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 	async defer>
 <link rel="stylesheet" href="css/style.css" async defer>
-<link rel="stylesheet" href="css/style.css" async defer>
 <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -52,16 +51,17 @@
 			</div>
 		</div>
 	</div>
-		<div class="sticky-top">
+	<div class="sticky-top">
 		<div class="animated hiding" data-animation="fadeInLeft"
 			data-delay="300">
 			<div class="cardcontactfooter">
 				<div class="card-block">
 					<h4 class="card-titlefooter">Infos contacts</h4>
 					<p class="card-text">
-						Adresse : 156-158 rue de la Bassée 59000 Lille Adresse Mail : e.suissadessenne@gmail.com <br> Telephone :
-						03.28.45.94.92 / 06.71.20.95.32  Fax : 09.70.62.34.08 
-					</p>				
+						Adresse : 156-158 rue de la Bassée 59000 Lille Adresse Mail :
+						e.suissadessenne@gmail.com <br> Telephone : 03.28.45.94.92 /
+						06.71.20.95.32 Fax : 09.70.62.34.08
+					</p>
 				</div>
 			</div>
 		</div>
@@ -74,7 +74,8 @@
 				<img src="img/cover/photoTest.jpg"
 					class="rounded-circle img-thumbnail">
 				<h5 class="card-title">
-					Elisabeth Suissa-Dessenne <br> <br> Avocat depuis 2008
+					Elisabeth Suissa-Dessenne <br> 34 ans <br> Avocat depuis
+					2008
 				</h5>
 				<br>
 				<blockquote class="card-text">"J'interviens au moment
@@ -155,8 +156,7 @@
 								alt="Card image">
 							<div class="card-img-overlay">
 								<h5 class="card-title">S'investir pleinement dans votre cas</h5>
-								<br>
-								<br> <br>
+								<br> <br> <br>
 								<p class="card-text-2">
 									Je me consacre entièrement à la défense de vos intérêts et
 									recherche les solutions les plus justes et équilibrées dans vos
@@ -194,9 +194,30 @@
 						</div>
 					</div>
 				</div>
-				<br>
-				<br>
-				<br>
+				<br> <br> <br> <br> <br>
+				<div class="value-card animated hiding" data-animation="fadeInRight"
+					data-delay="300">
+					<div class="row user-detail2">
+						<div class="col-lg-12 col-sm-12 col-12">
+							<img src="img/cover/valeur_justice.jpg" class="img-value"
+								style="float: left">
+							<h5 class="card-title-2">Respect,Intégrité,Ténacité,Persévérance,Confiance</h5>
+							<br>
+							<blockquote class="card-text-2">
+								Je mets tout en oeuvre pour défendre les personnes qui placent
+								leur confiance en moi. En tant qu'avocat, je souhaite porter la
+								voix de mes clients. Les aider, les accompagner et les
+								conseiller et cela sans les juger. <br> J’essaie au
+								quotidien d'allier mes compétences et mes convictions pour
+								avancer avec vous et dépasser les obstacles du quotidien. Je
+								serai à vos côtés quand vous aurez besoin d’être entendus et
+								défendus avec compétence et sérieux.
+							</blockquote>
+						</div>
+					</div>
+				</div>
+				<br> <br>
+
 				<div class="col-sm-12 animated hiding" data-animation="fadeInDown">
 					<div id="testimonials" class="carousel slide">
 						<ol class="carousel-indicators">
@@ -258,9 +279,9 @@
 							<ul class="items list-unstyled clearfix animated hiding mb-0"
 								data-animation="fadeInDown">
 								<li class="item branding"><a
-									class="img-responsive center-block" href="work.html"
-									data-gall="work" data-vbtype="ajax"> <img
-										class="portfo-img" src="img/work/droittravail.jpg" alt="">
+									class="img-responsive center-block" data-toggle="modal"
+									data-target="#modalDroitTravail"> <img class="portfo-img"
+										src="img/work/droittravail.jpg" alt="">
 										<div class="card-img-porto-overlay">
 											<h5 class="card-title">Droit du travail</h5>
 											<button
@@ -271,8 +292,8 @@
 								</a></li>
 
 								<li class="item branding"><a
-									class="img-responsive center-block" href="work.html"
-									data-gall="work" data-vbtype="ajax"> <img
+									class="img-responsive center-block" data-toggle="modal"
+									data-target="#modalDroitFamille"> <img
 										class="portfo-img" src="img/work/droitfamille2.jpg" alt="">
 										<div class="card-img-porto-overlay">
 											<h5 class="card-title">Droit de la Famille</h5>
@@ -286,8 +307,8 @@
 							<ul class="items list-unstyled clearfix animated hiding mb-0"
 								data-animation="fadeInDown">
 								<li class="item branding"><a
-									class="img-responsive center-block" href="work.html"
-									data-gall="work" data-vbtype="ajax"> <img
+									class="img-responsive center-block" data-toggle="modal"
+									data-target="#modalDroitVictime"> <img
 										class="portfo-img" src="img/work/droitvictime.jpg" alt="">
 										<div class="card-img-porto-overlay">
 											<h5 class="card-title">Droit des victimes</h5>
@@ -298,8 +319,8 @@
 										</div>
 								</a></li>
 								<li class="item branding"><a
-									class="img-responsive center-block" href="work.html"
-									data-gall="work" data-vbtype="ajax"> <img
+									class="img-responsive center-block"data-toggle="modal"
+									data-target="#modalCessionConstitution"> <img
 										class="portfo-img" src="img/work/cession.jpg" alt="">
 										<div class="card-img-porto-overlay">
 											<h5 class="card-title">
@@ -331,12 +352,47 @@
 		<div class="container">
 			<div class="content text-center">
 				<div class="heading">
-					<h2 class="mt-0 mb-4">Honoraires</h2>
+					<h2 class="mt-0 mb-4"
+						style="color: letter-spacing: -.02rem; color: white; font-weight: bold;">Honoraires</h2>
 					<div class="border"></div>
 				</div>
 				<br> <br>
 				<div class="row">
-					<div class="col-md-3 col-sm-6 col-xs-12 teammate animated hiding"
+					<div class="balance animated hiding" data-animation="fadeInLeft"
+						data-delay="300">
+						<img class="img-balance" src="img/cover/balanceMod.png" alt="">
+					</div>
+					<p class="card-text-3">Les honoraires de consultation,
+						d’assistance, de conseil et de rédaction d’acte sont fixés en
+						accord avec le client. Ils sont la contrepartie légitime du
+						travail accompli par l’avocat, et est proportionnel à la
+						difficulté de l’affaire, du temps passé, des frais engendrés par
+						celle-ci.</p>
+					<div class="balance animated hiding" data-animation="fadeInRight"
+						data-delay="300">
+						<img class="img-balance" src="img/cover/balanceMod.png" alt="">
+					</div>
+					<p class="card-text-3">Je sollicite en début de dossier une
+						provision nécessaire à son commencement. Il est possible de
+						déterminer un montant des honoraires forfaitaires ou au taux
+						horaire en fonction des contentieux, une fois que l’on sait
+						précisément vers quelle procédure on se dirige. La détermination
+						des honoraires tient compte, conformément à la loi, des usages, de
+						la situation financière du client, de la difficulté du dossier,
+						des frais exposés, de l’ancienneté de l’avocat et de ses
+						diligences.</p>
+					<div class="balance animated hiding" data-animation="fadeInLeft"
+						data-delay="300">
+						<img class="img-balance" src="img/cover/balanceMod.png" alt="">
+					</div>
+					<p class="card-text-3">Une convention est obligatoire, elle
+						prévoit outre la rémunération des prestations effectuées, la
+						fixation d’un honoraire complémentaire en fonction du résultat
+						obtenu. N’hésitez pas à contacter le cabinet pour plus
+						d’informations ; sur présentation succincte de votre dossier, je
+						vous enverrai un devis.</p>
+					<br> <br>
+					<!--  <div class="col-md-3 col-sm-6 col-xs-12 teammate animated hiding"
 						data-animation="fadeInLeft" data-delay="600">
 						<div class="profile-photo">
 							<img class="img-fluid" src="img/team/1.jpg" alt="">
@@ -447,7 +503,7 @@
 								</a></li>
 							</ul>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
@@ -620,6 +676,132 @@
 
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV0MLiLWQE2g4G30-6XdtvUSlkCkq17K4&callback=myMap"></script>
+	<!-- Modal -->
+	<div class="modal fade" id="modalDroitTravail" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<img class="card-img" style="max-height: 150px; width: 100%"
+						src="img/cover/bannertravail.jpg" alt="Card image">
+					<div style="position: absolute; top: 0; right: 0; left: 0; padding: 1.25rem;">
+						<h5 class="card-title">Droit du Travail</h5>
+					</div>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body">
+					<p>Branche du droit social, le droit du travail est l'ensemble
+						des normes juridiques qui régissent les relations entre un
+						employeur et un employé. Le droit du travail encadre notamment la
+						formation, l'exécution et la rupture du contrat de travail. Il
+						garantit également le respect des libertés syndicales et des
+						normes de sécurité au travail, et la protection des travailleurs
+						vulnérables.</p>
+				</div>
+				<div class="modal-body">
+					<p class="descrip">Mon expérience</p>
+					<p>blablablablablablabvla</p>
+				</div>
+				<!-- Modal Footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalDroitFamille" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+										<h5 class="card-title">Droit de la Famille</h5>
+					<!-- <img class="card-img" style="max-height: 150px; width: 100%"
+						src="img/cover/famillebanner.jpg" alt="Card image">
+					<div
+						style="position: absolute; top: 0; right: 0; left: 0; padding: 1.25rem;">
+						<h5 class="card-title">Droit de la Famille</h5>
+					</div> -->
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body">
+					<p>Le droit de la famille est une branche du droit civil qui
+						régit et organise les relations juridiques entre les différents
+						membres d’une même famille. Le droit de la famille définit
+						essentiellement deux types de liens familiaux : les liens
+						d’alliance (couples) et les liens de parenté (ascendants et
+						descendants).</p>
+				</div>
+				<div class="modal-body">
+					<p class="descrip">Mon expérience</p>
+					<p>blablablablablablabvla</p>
+				</div>
+				<!-- Modal Footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalDroitVictime" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<!--  <img class="card-img" style="max-height: 150px; width: 100%"
+						src="img/cover/victimebanner.jpg" alt="Card image">
+					<div style="position: absolute; top: 0; right: 0; left: 0; padding: 1.25rem;">
+
+					</div>-->
+					<h5 class="card-title">Droit des victimes</h5>
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body">
+					<p>Le droit des victimes est...</p>
+				</div>
+				<div class="modal-body">
+					<p class="descrip">Mon expérience</p>
+					<p>blablablablablablabvla</p>
+				</div>
+				<!-- Modal Footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalCessionConstitution" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+										<h5 class="card-title">Constitutions de société et cession de parts</h5>
+					<!--  <img class="card-img" style="max-height: 150px; width: 100%"
+						src="img/cover/listen.jpg" alt="Card image">
+					<div style="position: absolute; top: 0; right: 0; left: 0; padding: 1.25rem;">
+						<h5 class="card-title">Constitutions de société et cession de parts</h5>
+					</div>-->
+				</div>
+				<!-- Modal Body -->
+				<div class="modal-body">
+					<p>...</p>
+				</div>
+				<div class="modal-body">
+					<p class="descrip">Mon expérience</p>
+					<p>blablablablablablabvla</p>
+				</div>
+				<!-- Modal Footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
+
 
 </html>

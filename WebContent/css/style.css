@@ -1,10 +1,52 @@
+.modal-body .form-horizontal .col-sm-2,
+.modal-body .form-horizontal .col-sm-10 {
+    width: 100%
+}
+
+.modal-body .form-horizontal .control-label {
+    text-align: left;
+}
+.modal-body .form-horizontal .col-sm-offset-2 {
+    margin-left: 15px;
+}
+
+.modal-content
+{
+	width: 150%;
+	border : 6px solid silver;
+	position : absolute;
+	top: 10em;
+	color : white;	
+	right : -20%;
+	background : #2E3232;
+}
+
+.modalGeneral
+{
+	width: 20%;	
+}
+
+.img-balance
+{
+	width: 50px;
+	height: 50px;
+}
+
+.balance
+{
+	height: 70px;
+	width:100%;
+	margin-left: auto;
+   	 margin-right: auto;
+}
+
 .contactinfos {
 	font-size: large;
 	font-weight: bold;
 }
 
 .portfo-img {
-	border: 6px solid silver;
+	border: 6px solid #2d2d2d;
 	padding: 2px;
 	background-color: white;
 	width: 100%;
@@ -50,6 +92,11 @@
 	font-size: x-large;
 }
 
+.value-card {
+	color: white;
+	background-color: #2E3232;
+}
+
 .main-section {
 	width: 20%;
 	position: absolute;
@@ -68,6 +115,10 @@
 }
 
 .user-detail {
+	margin: -50px 0px 30px 0px;
+}
+
+.user-detail2 {
 	margin: -50px 0px 30px 0px;
 }
 
@@ -98,6 +149,7 @@
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 	opacity: 0.8;
 }
+
 
 /* The fast way */
 .card {
@@ -148,15 +200,31 @@
 {
 display:none;	
 }
+
 .card-title {
 	font-weight: bold;
 	font-size: x-large;
 	color: white;
 }
 
+.card-title-2 {
+	font-weight: bold;
+	font-style:italic;
+	font-size: x-large;
+	color: white;
+	text-decoration: underline;
+}
+
 .card-text-2 {
 	font-size: large;
 	font-weight: bold;
+	text-align: justify;
+}
+
+.card-text-3 {
+	font-size: large;
+	font-weight: bold;
+	text-align : center;
 }
 
 .card-text {
@@ -171,38 +239,13 @@ body {
 	font-family: "Source Sans Pro", sans-serif;
 }
 
-h1
-,
-h2
-,
-h4
-,
-h5
-,
+h1,h2,h4,h5
 {
-letter-spacing
-:
- 
--
-.02rem
-;
-
-    
-color
-:
- 
-white
-;
-
-    
-font-weight
-:
- 
-bold
-;
-
-
+letter-spacing:-.02rem;    
+color:white;    font-weight:bold;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
+
 h3, h6 {
 	letter-spacing: -.02rem;
 	color: black;
@@ -229,6 +272,20 @@ a:hover, a:focus {
 
 .showing {
 	opacity: 1;
+}
+
+.img-value
+{
+
+	margin-right: 50px;
+	border : 1px silver solid;
+}
+
+.img-value:hover
+{
+		transform: scale3d(1.006, 1.006, 1);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	opacity: 0.8;
 }
 
 .img-rounded {
@@ -606,7 +663,7 @@ a:hover, a:focus {
 }
 
 #testimonials .carousel-indicators .active {
-	background: #f5b76a;
+	background: #980b26;
 	border-color: #fff;
 }
 
@@ -719,14 +776,16 @@ a:hover, a:focus {
 	margin-bottom: 0;
 }
 
+.work
+{
+	width: 50%;	
+}
+
 .work .title {
 	color: #222;
 }
 
-/* Venobox */
-.vbox-container {
-	overflow: hidden;
-}
+
 
 /* Animations */
 @
@@ -797,7 +856,7 @@ rotate
 		width: 100%;
 		border-bottom-color: transparent;
 		padding : 0px;
-			text-align : center;
+		text-align : center;
 	}
 	
 	.card-titlefooter {
