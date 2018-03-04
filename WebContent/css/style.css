@@ -985,9 +985,10 @@ rotate
 
 	.main-section {
 	width: 90%;
+	max-height : 96%;
 	position: absolute;
 	right : 1em;
-	top: 33em;
+	top: 35em;
 	z-index: 2;
 	color: white;
 	border: 3px solid white;
