@@ -482,13 +482,12 @@
 								</div>
 								<div class="col-md-12">
 									<input type="submit"
-										class="btn btn-blue btn-send animated hiding" value="Envoyer">
+										class="btn btn-blue btn-send animated hiding" value="Envoyer" data-toggle="modal" data-target="#myModal">
 								</div>
 							</div>
 						</form>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -527,6 +526,8 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.min.js"></script>
 	<script src="js/script.js?v=1.0"></script>
+		<script src="js/validator.js"> </script>
+	<script src="js/contact.js"> </script>
 	<!-- Google Analytics: change UA-25089888-9 to be your site's ID. -->
 	<!--  <script>
 		(function(b, o, i, l, e, r) {
@@ -687,8 +688,20 @@
 			</div>
 		</div>
 	</div>
+	
+	<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="background:white">
+    <!-- Modal content-->
+    <div class="modal-content" style="position: absolute;
+    right: 0px; background:white;color:black;text-align:center;font-size: large; font-weight: bold;">
+      <div class="modal-body">
+        <p>Envoi du mail réussi. Je vous répondrai dans les plus brefs délais</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
-
-
-
 </html>

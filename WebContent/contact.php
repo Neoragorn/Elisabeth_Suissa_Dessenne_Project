@@ -7,17 +7,17 @@
 $from = 'demo@domain.com';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'demo@domain.com';
+$sendTo = 'casiersofian@gmail.com';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Nouveau message depuis le site du Cabinet';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
+$fields = array('name' => 'Nom', 'phone' => 'Telephone', 'email' => 'Email', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Votre message a été bien envoyé. j\'y répondrai dans les plus brefs délais';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
@@ -27,22 +27,24 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
  */
 
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(0);
 
 try
 {
-
+    
     if(count($_POST) == 0) throw new \Exception('Form is empty');
-            
-    $emailText = "You have a new message from your contact form\n=============================\n";
-
+    
+    $emailText = "";
+    
     foreach ($_POST as $key => $value) {
-        // If the field exists in the $fields array, include it in the email 
+        // If the field exists in the $fields array, include it in the email
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
+            if ($key == 'email')
+                $from = "$value";
         }
     }
-
+    
     // All the neccessary headers for the email.
     $headers = array('Content-Type: text/plain; charset="UTF-8";',
         'From: ' . $from,
@@ -52,7 +54,7 @@ try
     
     // Send email
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
-
+    
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
 catch (\Exception $e)
@@ -64,9 +66,9 @@ catch (\Exception $e)
 // if requested by AJAX request return JSON response
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
-
+    
     header('Content-Type: application/json');
-
+    
     echo $encoded;
 }
 // else just display the message
