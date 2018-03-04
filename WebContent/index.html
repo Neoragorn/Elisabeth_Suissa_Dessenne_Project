@@ -201,7 +201,9 @@
 						<div class="col-lg-12 col-sm-12 col-12">
 							<img src="img/cover/valeur_justice.jpg" class="img-value">
 							<h5 class="card-title-2-valeur">Respect,Intégrité,Ténacité,Persévérance,Confiance</h5>
-							<h5 class="card-title-2-valeur-mobile">Respect,Intégrité,Ténacité,<br>Persévérance,Confiance</h5>
+							<h5 class="card-title-2-valeur-mobile">
+								Respect,Intégrité,Ténacité,<br>Persévérance,Confiance
+							</h5>
 							<br>
 							<blockquote class="card-text-2">
 								Je mets tout en oeuvre pour défendre les personnes qui placent
@@ -216,7 +218,7 @@
 						</div>
 					</div>
 				</div>
-				 <div class="mobile-space" ></div>
+				<div class="mobile-space"></div>
 
 				<div class="col-sm-12 animated hiding" data-animation="fadeInDown">
 					<div id="testimonials" class="carousel slide">
@@ -293,8 +295,8 @@
 
 								<li class="item branding"><a
 									class="img-responsive center-block" data-toggle="modal"
-									data-target="#modalDroitFamille"> <img
-										class="portfo-img" src="img/work/droitfamille2.jpg" alt="">
+									data-target="#modalDroitFamille"> <img class="portfo-img"
+										src="img/work/droitfamille2.jpg" alt="">
 										<div class="card-img-porto-overlay">
 											<h5 class="card-title">Droit de la Famille</h5>
 											<button
@@ -308,8 +310,8 @@
 								data-animation="fadeInDown">
 								<li class="item branding"><a
 									class="img-responsive center-block" data-toggle="modal"
-									data-target="#modalDroitVictime"> <img
-										class="portfo-img" src="img/work/droitvictime.jpg" alt="">
+									data-target="#modalDroitVictime"> <img class="portfo-img"
+										src="img/work/droitvictime.jpg" alt="">
 										<div class="card-img-porto-overlay">
 											<h5 class="card-title">Droit des victimes</h5>
 											<button
@@ -319,7 +321,7 @@
 										</div>
 								</a></li>
 								<li class="item branding"><a
-									class="img-responsive center-block"data-toggle="modal"
+									class="img-responsive center-block" data-toggle="modal"
 									data-target="#modalCessionConstitution"> <img
 										class="portfo-img" src="img/work/cession.jpg" alt="">
 										<div class="card-img-porto-overlay">
@@ -439,13 +441,13 @@
 						data-delay="600">
 						<i class="fa fa-envelope fa-3x"></i>
 						<form id="contact-form" method="post" action="contact.php"
-							role="form">
+							role="form" data-toggle="validator">
 							<div class="row">
 								<div class="col">
 									<div class="form-group">
 										<label for="form_name">Nom & Prenom *</label> <input
-											id="form_name" type="text" name="name" class="form-control"
-											required="required"
+											id="form_name" type="text" name="name" class="form-control" onchange="checkForm()"
+											required="required" 
 											data-error="Votre nom et prenom est necessaire">
 										<div class="help-block with-errors"></div>
 									</div>
@@ -454,7 +456,7 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="form_email">Email *</label> <input id="form_email"
+										<label for="form_email">Email *</label> <input id="form_email" onchange="checkForm()"
 											type="email" name="email" class="form-control"
 											required="required"
 											data-error="Votre adresse mail est necessaire">
@@ -463,8 +465,8 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="form_phone">Telephone</label> <input
-											id="form_phone" type="tel" name="phone" class="form-control">
+										<label for="form_phone">Telephone</label> <input 
+											id="form_phone" type="tel" name="phone" class="form-control"> 
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -475,14 +477,15 @@
 										<label for="form_message">Message *</label>
 										<textarea id="form_message" name="message"
 											class="form-control" placeholder="Que désirez vous ? "
-											rows="4" required="required"
+											rows="4" required="required" onchange="checkForm()"
 											data-error="Laissez nous un message s'il vous plaît"></textarea>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-12">
-									<input type="submit"
-										class="btn btn-blue btn-send animated hiding" value="Envoyer" data-toggle="modal" data-target="#myModal">
+									<input type="submit" id="boutonSubmit"
+										class="btn btn-blue btn-send animated hiding" value="Envoyer" disabled="disabled"
+										 data-toggle="modal" data-target="#myModal">
 								</div>
 							</div>
 						</form>
@@ -526,8 +529,12 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.min.js"></script>
 	<script src="js/script.js?v=1.0"></script>
-		<script src="js/validator.js"> </script>
-	<script src="js/contact.js"> </script>
+	<script src="js/validator.js">
+		
+	</script>
+	<script src="js/contact.js">
+		
+	</script>
 	<!-- Google Analytics: change UA-25089888-9 to be your site's ID. -->
 	<!--  <script>
 		(function(b, o, i, l, e, r) {
@@ -561,9 +568,12 @@
 			marker.setMap(map);
 		}
 	</script>
-
+<script type="text/javascript" src="js/check.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV0MLiLWQE2g4G30-6XdtvUSlkCkq17K4&callback=myMap"></script>
+
+
 	<!-- Modal -->
 	<div class="modal fade" id="modalDroitTravail" tabindex="-1"
 		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -573,7 +583,8 @@
 				<div class="modal-header">
 					<img class="card-img" style="max-height: 150px; width: 100%"
 						src="img/cover/bannertravail.jpg" alt="Card image">
-					<div style="position: absolute; top: 0; right: 0; left: 0; padding: 1.25rem;">
+					<div
+						style="position: absolute; top: 0; right: 0; left: 0; padding: 1.25rem;">
 						<h5 class="card-title">Droit du Travail</h5>
 					</div>
 				</div>
@@ -604,7 +615,7 @@
 			<div class="modal-content">
 				<!-- Modal Header -->
 				<div class="modal-header">
-										<h5 class="card-title">Droit de la Famille</h5>
+					<h5 class="card-title">Droit de la Famille</h5>
 					<!-- <img class="card-img" style="max-height: 150px; width: 100%"
 						src="img/cover/famillebanner.jpg" alt="Card image">
 					<div
@@ -666,7 +677,8 @@
 			<div class="modal-content">
 				<!-- Modal Header -->
 				<div class="modal-header">
-				<h5 class="card-title">Constitutions de société et cession de parts</h5>
+					<h5 class="card-title">Constitutions de société et cession de
+						parts</h5>
 					<!--  <img class="card-img" style="max-height: 150px; width: 100%"
 						src="img/cover/listen.jpg" alt="Card image">
 					<div style="position: absolute; top: 0; right: 0; left: 0; padding: 1.25rem;">
@@ -688,20 +700,21 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog" style="background:white">
-    <!-- Modal content-->
-    <div class="modal-content" style="position: absolute;
-    right: 0px; background:white;color:black;text-align:center;font-size: large; font-weight: bold;">
-      <div class="modal-body">
-        <p>Envoi du mail réussi. Je vous répondrai dans les plus brefs délais</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+		<div class="modal-dialog" style="background: white">
+			<!-- Modal content-->
+			<div class="modal-content"
+				style="position: absolute; right: 0px; background: white; color: black; text-align: center; font-size: large; font-weight: bold;">
+				<div class="modal-body">
+					<p>Envoi du mail réussi. Je vous répondrai dans les plus brefs
+						délais</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
