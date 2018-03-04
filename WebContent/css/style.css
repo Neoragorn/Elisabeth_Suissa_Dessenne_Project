@@ -3,6 +3,11 @@
     width: 100%
 }
 
+.mobile-space
+{
+	margin : 20px;
+}
+
 .modal-body .form-horizontal .control-label {
     text-align: left;
 }
@@ -24,6 +29,13 @@
 .modalGeneral
 {
 	width: 20%;	
+}
+
+#map
+{
+	width: 100%;
+	height: 350px;
+	background: white;
 }
 
 .img-balance
@@ -208,6 +220,23 @@ display:none;
 }
 
 .card-title-2 {
+	font-weight: bold;
+	font-style:italic;
+	font-size: x-large;
+	color: white;
+	text-decoration: underline;
+}
+
+.card-title-2-valeur {
+	font-weight: bold;
+	font-style:italic;
+	font-size: x-large;
+	color: white;
+	text-decoration: underline;
+}
+
+.card-title-2-valeur-mobile {
+	display:none;
 	font-weight: bold;
 	font-style:italic;
 	font-size: x-large;
@@ -864,7 +893,7 @@ rotate
 	
 	.card-titlefooter {
 	text-align : center;
-		font-weight: 300;
+	font-weight: bold;
 	font-size: large;
 	color: white;
 	padding : 0px;
@@ -944,6 +973,11 @@ rotate
 
 @media (max-width : 450px)
 {
+	.mobile-space
+	{
+		margin-top : 200px;
+	}
+	
 	#portfolio {
 	width: 100%;
 	padding-right : 27%;
@@ -999,6 +1033,48 @@ rotate
     color: white;
     right: -0%;
     background: #2E3232;
-	}	
+	}
+	
+	.card-title-2-valeur {
+	display:none;
+}
+
+.card-title-2-valeur-mobile {
+	display:block;
+	font-weight: bold;
+	font-style:italic;
+	font-size: x-large;
+	color: white;
+	text-decoration: underline;
+}
+
+	.card-titlefooter {
+	text-align : center;
+		font-weight: 300;
+	font-size: large;
+	color: white;
+	padding : 0px;
+}
+
+	.cardcontactfooter
+	{
+		display: inline;
+		background-color: #2E3232;
+		color: white;
+		border: 1px solid white;
+		border-left: none;
+		border-right: none;
+		z-index: 1;
+		font-weight: 200;
+		position: fixed;
+		bottom : 0;
+		z-index: 98;
+		width: 100%;
+		height : 130px;
+		border-bottom-color: transparent;
+		padding : 0px;
+		text-align : center;
+	}
+	
 }
 
