@@ -535,6 +535,7 @@ a:hover, a:focus {
 	background-position: center center;
 	background-size: cover;
 	min-height: 950px;
+	border-bottom: 5px solid silver;	
 }
 
 #home h1 {
