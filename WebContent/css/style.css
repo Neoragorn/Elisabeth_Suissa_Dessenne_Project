@@ -991,12 +991,6 @@ rotate
 @media (min-width: 340px) and (max-width : 450px)
 {
 	
-	
-	.mobile-space
-	{
-		margin-top : 50%;
-	}
-	
 	#portfolio {
 	width: 100%;
 	padding-right : 27%;
@@ -1115,7 +1109,7 @@ rotate
 }
 
 /*iphone 4 & 5*/
-@media (min-width: 310px) and (max-height: 568px)
+@media (min-width: 310px) and (max-width: 330px)
 {
 
 	.modal {
@@ -1363,4 +1357,250 @@ rotate
 	{
 		display:none;
 	}	
+}
+
+/*Iphone 4 */
+@media (orientation: landscape) and (max-width : 490px)
+{
+	.card-block
+	{
+	height: 8em;
+	}
+	
+	.main-section {
+    width: 90%;
+    max-height: 30em;
+    position: absolute;
+    right: 1em;
+    top: 35em;
+    z-index: 2;
+    color: white;
+    border: 3px solid red;
+    border-radius: 30px;
+    background-color: #2E3232;
+	}
+	
+    .container
+	{
+	width:100%;
+	}
+		.justice1-img
+	{
+		display:none;
+	}
+	
+	.justice2-img
+	{
+		display:none;
+	}
+	
+	#workMobile
+	{
+	width: 80%;
+		 padding-right: 2em;
+	}
+    
+    	.modal-content {
+    width: 100%;
+    border: 6px solid silver;
+    position: absolute;
+    top: 10em;
+    color: white;
+    left: 0%;
+    background: #2E3232;
+	}
+	
+}
+
+/*Iphone 5 */
+@media (orientation: landscape) and (max-width : 570px) and (min-width : 500px)
+{
+	.card-block
+	{
+	height: 8em;
+	}
+	
+	.main-section {
+    width: 90%;
+    max-height: 30em;
+    position: absolute;
+    right: 1em;
+    top: 35em;
+    z-index: 2;
+    color: white;
+    border: 3px solid green;
+    border-radius: 30px;
+    background-color: #2E3232;
+    
+	}
+	
+	
+    .container
+	{
+	width:100%;
+	}
+		.justice1-img
+	{
+		display:none;
+	}
+	
+	.justice2-img
+	{
+		display:none;
+	}
+	
+	#workMobile
+	{
+	width: 80%;
+		 padding-right: 2em;
+	}
+    
+    	.modal-content {
+    width: 100%;
+    border: 6px solid silver;
+    position: absolute;
+    top: 10em;
+    color: white;
+    left: 0%;
+    background: #2E3232;
+	}
+}
+
+/*Iphone 7 */
+@media (orientation: landscape) and (max-width : 740px) and (min-width : 640px)
+{
+	.card-block
+	{
+	height: 8em;
+	}
+	
+	.main-section {
+    width: 90%;
+    max-height: 31em;
+    position: absolute;
+    right: 11em;
+    top: 33em;
+    z-index: 2;
+    color: white;
+    border: 3px solid blue;
+    border-radius: 30px;
+    background-color: #2E3232;
+	}
+	
+	
+    .container
+	{
+	width:100%;
+	}
+		.justice1-img
+	{
+		display:none;
+	}
+	
+	.justice2-img
+	{
+		display:none;
+	}
+	
+	#rowMobile
+	{
+    width: 80em;
+    margin-left: 10em;
+    display: block;
+	}
+	
+	#workMobile
+	{
+	width: 100%;
+	}
+    
+    	.modal-content {
+    width: 100%;
+    border: 6px solid silver;
+    position: absolute;
+    top: 10em;
+    color: white;
+    left: 0%;
+    background: #2E3232;
+	}
+}
+
+/*BlackBerryZ10*/
+@media (orientation: landscape) and (max-width : 650px) and (min-width : 630px)
+{
+	.card-block
+	{
+	height: 8em;
+	}
+	
+	.main-section {
+    width: 90%;
+    max-height: 31em;
+    position: absolute;
+    right: 11em;
+    top: 33em;
+    z-index: 2;
+    color: white;
+    border: 3px solid yellow;
+    border-radius: 30px;
+    background-color: #2E3232;
+	}
+	
+	
+    .container
+	{
+	width:100%;
+	}
+		.justice1-img
+	{
+		display:none;
+	}
+	
+	.justice2-img
+	{
+		display:none;
+	}
+	
+	#rowMobile
+	{
+    width: 80em;
+    margin-left: 10em;
+    display: block;
+	}
+	
+	#workMobile
+	{
+	width: 100%;
+	}
+    
+    	.modal-content {
+    width: 100%;
+    border: 6px solid silver;
+    position: absolute;
+    top: 10em;
+    color: white;
+    left: 0%;
+    background: #2E3232;
+	}
+}
+
+/*Nexus 7 */
+@media (orientation: landscape) and (max-width : 970px) and (min-width : 940px)
+{
+	
+	.main-section {
+    width: 90%;
+    max-height: 31em;
+    position: absolute;
+    right: 16em;
+    top: 33em;
+    z-index: 2;
+    color: white;
+    border: 3px solid purple;
+    border-radius: 30px;
+    background-color: #2E3232;
+	}
+	
+	
+
 }
