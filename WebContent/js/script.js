@@ -129,3 +129,9 @@ $(window).on("load", function() {
     $loader.find(".loading").fadeOut();
     $loader.fadeOut("slow");
 });
+
+$(function(){
+    $('.carousel').carousel({
+      interval: 6000
+    });
+});
