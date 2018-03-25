@@ -453,6 +453,8 @@ a:hover, a:focus {
 	font-weight: bold;
 	color: #666;
 	text-transform: uppercase;
+	position: relative;
+    right: 30%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -536,7 +538,7 @@ a:hover, a:focus {
 #home {
 	padding: 0;
 	color: #fff;
-	background-image: url(../img/cover/fondTest.jpg);
+	background-image: url(../img/cover/home.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -1607,6 +1609,14 @@ rotate
     background-color: #2E3232;
 	}
 	
+}
 	
+@media (max-width : 550px)
+{
+.navbar-light .navbar-brand
+{	
+	display:none;
+
+	}
 
 }
